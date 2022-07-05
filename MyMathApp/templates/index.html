@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css' />
+    </head>
+    <body>
+        <h1>My Math</h1>
+        <div>{{ error }}</div>
+        <form method="POST">
+            <div id="num">
+                <input type="number" name="number" id="number" autofocus/>
+                <div>{{ num_list }}</div>
+            </div>
+            <div id="buttons">
+                <input type="submit" name="Add" value="Add to List"/>
+                <input type="submit" name="Calculate" value="Calculate"/>
+                <input type="submit" name="Clear" value="Clear"/>
+            </div>
+        </form>
+        <div>
+            <div>
+                Max: {{ maximum }}
+            </div>
+            <div>
+                Average: {{ avg }}
+            </div>
+            <div>
+                Standard Deviation: {{ std_dev }}
+            </div>
+        </div>
+    </body>
+</html>

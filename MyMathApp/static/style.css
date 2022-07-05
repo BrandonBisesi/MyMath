@@ -1,0 +1,36 @@
+body {
+    background: rgb(35, 35, 35);
+    color: rgb(230, 230, 230);
+}
+
+form{
+    border: solid black 2px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 8px;
+}
+
+#buttons
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]
+{
+    color:rgb(230, 230, 230);
+    background-color: rgb(14, 11, 20);
+    border: solid rgb(17, 15, 25) 2px;
+    border-radius: 8px;
+    width:100px;
+    height: 50px;
+}
+
+#number
+{
+    background-color:rgb(35, 35, 35);
+    border: solid rgb(8, 8, 8) 2px;
+    height: 25px;
+    color: rgb(230, 230, 230);
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href='/static/buttonstyle.css' />
+</head>
+<body>
+   <h1>MyMath</h1>
+   <div>{{ error }}</div>
+   <form method="POST">
+   <table>
+      <tr>
+         <td colspan="3">{{ num_list }}</td>
+      </tr>
+      <tr>
+            <td colspan="3"><input readonly type="text" name="number" id="number" value = {{ number }}></td>
+         </tr>
+      <tr>
+         <td><input type="submit" name="digit" value="1"/> </td>
+         <td><input type="submit" name="digit" value="2"/> </td>
+         <td><input type="submit" name="digit" value="3"/> </td>
+      </tr>
+      <tr>
+         <td><input type="submit" name="digit" value="4"/> </td>
+         <td><input type="submit" name="digit" value="5"/> </td>
+         <td><input type="submit" name="digit" value="6"/> </td>
+      </tr>
+      <tr>
+         <td><input type="submit" name="digit" value="7"/> </td>
+         <td><input type="submit" name="digit" value="8"/> </td>
+         <td><input type="submit" name="digit" value="9"/> </td>
+      </tr>
+      <tr>
+         <td><input type="submit" name="Add" value="Add"/> </td>
+         <td><input type="submit" name="digit" value="0"/> </td>
+         <td><input type="submit" id="Clear" name="Clear" value="Clear"/></td>
+      </tr>
+      <tr>
+         <td colspan="3"><input type="submit" id="Calculate" name="Calculate" value="Calculate"/></td>
+      </tr>
+   </table>
+   </form>
+   <div>
+      <div>
+         Number List: {{ num_list }}
+      </div>
+      <div>
+          Max: {{ maximum }}
+      </div>
+      <div>
+          Average: {{ avg }}
+      </div>
+      <div>
+          Standard Deviation: {{ std_dev }}
+      </div>
+   </div>
+ </body>
+</html>
